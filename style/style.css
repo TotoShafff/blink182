@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    background-color: black;
+}
+
+.gridIndex{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+
+footer{grid-area:footer ;
+}
+
+.navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks{
+    font-family: Anton;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.navItem{
+    display: inline-block;
+    padding: 10px  30px;
+}
+
+
+.loguito{
+    width: 250px;
+    height: auto;
+    display: inline-block;
+}
+
+a:link, a:visited, a:active, a:hover { 
+    text-decoration: none;
+    color: white; 
+}
+
+h1,p,h3{
+    color: white;
+}
+
+.iglogo{
+    height: 20px;
+    width: auto;
+}
+
+.logosFooter{
+    margin: 8px;
+}
+
+.containerFooter{
+    text-align: center;
+}
+
+.containerMain{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.disco{
+    text-align: center;
+    width: 350px;
+}
+
+.imagenDisco{
+    text-align: center;
+}
+
+.containerButton{
+    margin: 16px;
+}
+
+.modButton{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.formButton{
+    margin: 0px;
+    padding: 0px;
+}
+
+.suborden{
+    margin-top: 80px;
+}
+
+.margenButton{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+h1{
+    font-family: "Permanent Marker";
+}
+
+p{
+    font-family: Roboto;
+}
+/*-----------------------------------------Pagina Integrantes---------------------------------*/
+h3{
+    font-family: Roboto;
+}
+
+.bodyIntegrantes {
+  color: black;
+  font-family: "Permanent Marker";
+}
+
+.mainIntegrantes {
+  background-color: white;
+  width: 1146px;
+  margin: 0 auto;
+  min-height: 627px;
+}
+
+.h2Integrantes {
+  padding: 20px 0px;
+  text-align: center;
+  color: white;
+}
+
+.card {
+  width: 320px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  background-color: black;
+  float: left;
+}
+
+
+.card > img {
+  border-radius: 2px;
+  max-width: 100%;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.card h3 {
+  color: white;
+  font-family: Permanent Marker;
+}
+
+.card p {
+  color: white;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+
+.h4Integrantes{
+  color: white;
+  font-family: Roboto;
+}
+
+/*-----------------------------------------Pagina Contacto----------------------------------*/
+
+.mainContacto{
+    margin-bottom: 120px;
+}
+
+.formContacto { 
+    max-width:420px; margin:50px auto; }
+
+.fbInput {
+  color:white;
+  font-family: Roboto;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid white;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.fbInput:focus { border:2px solid white; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: Roboto;
+  width: 100%;
+  background:white;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:black;
+  font-size:24px;
+  padding-top:3px;
+  padding-bottom:3px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:white; }
+
+.tituloContacto{
+    text-align: center;
+}
+
+.raya{
+    padding-top: 100px;
+}
+
+.moveForm{
+    padding-top: 30px;
+}
+
+/*------------------------------------------Pagina Discografia-----------------------------------------------------------------------------------*/
+
+div.img {
+    margin: 50px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    font-size:15px;
+}
+
+.footerDisco{
+    padding-top: 600px;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 768px){
+    body{
+        background-color: black;
+    }
+    .navBar{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        text-align: center;
+    }
+    .navLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navItem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .imagenDisco{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+}
