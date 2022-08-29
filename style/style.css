@@ -2,9 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+/*--------------------------------------------------------------------Index-------------------------------------------------------------------------------*/
+
 body{
     background-color: black;
 }
+
 
 .gridIndex{
     display: grid;
@@ -50,6 +53,8 @@ footer{grid-area:footer ;
     width: 250px;
     height: auto;
     display: inline-block;
+    transform: rotate(360deg);
+    transition: 2s;
 }
 
 a:link, a:visited, a:active, a:hover { 

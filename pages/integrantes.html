@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blink-182 nosotros</title>
+    <title>blink-182 contacto</title>
     <link rel="icon" href="../assets/favicon.jpg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../style/style.css">
 </head>
-<body class="bodyIntegrantes">
-    <header>
-        <nav>
-            <div class="row">
-                <div class="columnLogo">
-                <a href="../index.html"><img class="loguito" src="../assets/blinklogo.png" alt="logo pagina web"></a>
-                </div>
-                    <div class="columnVar"><ul class="ulist">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/integrantes.html">Integrantes</a></li>
-                    <li><a href="../pages/discografia.html">Discografía</a></li>                   
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                    <li><a href="https://instagram.com/totosuckewer_" target="_blank"><img class="iglogo" src="../assets/logoig.png" alt="logoinstagram"></a></li>
-                    <li><a href="https://facebook.com" target="_blank"><img class="iglogo" src="../assets/logofb.png" alt="logofacebook"></a></li>
-                    <li><a href="https://twitter.com" target="_blank"><img class="iglogo" src="../assets/logotw.png" alt="logotwitter"></a></li>
-                </ul>
-            </div>
-            </div>
+<body>
+    <div class="gridIndex">
+        <header>
+            <div class="animate__animated animate__backInLeft">
+        <nav class="navBar">
+            <a href="../index.html"><img class="loguito" src="../assets/blinklogo.png" alt="logo pagina web"></a>
+            <ul class="navLinks">
+                <li class="navItem"><a href="../index.html">Inicio</a></li>
+                <li class="navItem"><a href="../pages/integrantes.html">Integrantes</a></li>
+                <li class="navItem"><a href="../pages/discografia.html">Discografía</a></li>                   
+                <li class="navItem"><a href="../pages/contacto.html">Contacto</a></li>
+                <li class="navItem"><a href="https://instagram.com/totosuckewer_" target="_blank"><img class="iglogo" src="../assets/logoig.png" alt="logoinstagram"></a></li>
+                <li class="navItem"><a href="https://facebook.com" target="_blank"><img class="iglogo" src="../assets/logofb.png" alt="logofacebook"></a></li>
+                <li class="navItem"><a href="https://twitter.com" target="_blank"><img class="iglogo" src="../assets/logotw.png" alt="logotwitter"></a></li>
+            </ul>
         </nav>
+        </div>
     </header>
 
     <main>
+        <div class="animate__animated animate__backInDown">
         <h2 class="h2Integrantes">Integrantes de la Banda</h2>
         <section class="mainIntegrantes">
         <article class="card">
@@ -51,6 +51,7 @@
             <p>Nacido el 24 de febrero de 1976 en Chicago, Estados Unidos. Conocido por haber sido el cantante y guitarrista principal de "Alkaline Trio"</p>
         </article>
         </section>
+        </div>
     </main>
     
 
@@ -61,6 +62,10 @@
 
     
     <footer>
+        <div>
+            <hr>
+            <hr> <!-- genera linea -->
+        </div>
         <div class="containerFooter">
             <div>
                 <p>
@@ -81,6 +86,10 @@
         
     </footer>
 
+    <script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </body>
 </html>
